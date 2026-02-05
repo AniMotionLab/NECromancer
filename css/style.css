@@ -254,3 +254,68 @@ h2 {
   h1 { font-size:2em; }
   .slides { height:180px; }
 }
+
+/* =========================
+   Links
+   ========================= */
+.paper-links {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.paper-link {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #ba3014;
+  text-decoration: none;
+  border: 1px solid rgba(138, 34, 20, 0.35);
+  border-radius: 999px; /* 胶囊 */
+  transition: all 0.2s ease;
+  background: rgba(124,45,18,0.04);
+}
+
+.paper-link:hover {
+  color: #9A3412;
+  border-color: rgba(124,45,18,0.5);
+  background: rgba(124,45,18,0.08);
+}
+
+
+/* =========================
+   Citation
+   ========================= */
+.citation-block {
+  margin-top: 12px;
+  padding: 14px 16px;
+  background: #FAFAF9;          /* 暖浅灰，与你的 arXiv 框一致 */
+  border: 1px solid #E7E5E4;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  overflow-x: auto;
+}
+
+.citation-block code {
+  font-family: "Menlo", "Monaco", "Consolas", monospace;
+  color: #292524;
+}
+
+/* =========================
+   authors
+   ========================= */
+.authors {
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #141b2b;
+  text-align: center;
+}
+
+.affiliations {
+  margin-top: 4px;
+  font-size: 0.9rem;
+  color: #6B7280;
+  text-align: center;
+}
