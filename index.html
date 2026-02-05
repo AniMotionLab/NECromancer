@@ -14,10 +14,42 @@
   </h1>
   <h1>BREATHING LIFE INTO SKELETONS VIA BVH ANIMATION
   </h1>
-  <p class="authors">Supplemental Video Materials</p>
+<div class="paper-links">
+   <a href="https://arxiv.org/abs/" target="_blank" class="paper-link">
+     arXiv
+   </a>
+  </div>
+<div class="author-block">
+  <p class="authors">
+    Xu Mingxi<sup>1</sup>, Qi WANG<sup>1</sup>, Zhengyu Wen<sup>1</sup>,
+    Phong Dao Thien<sup>1</sup>, Zhengyu Li<sup>1</sup>, Ning Zhang<sup>1</sup><br>
+    Xiaoyu He<sup>1</sup>, Wei Zhao<sup>1</sup>, Kehong Gong<sup>2</sup>,
+    Mingyuan Zhang<sup>1,†</sup>
+  </p>
+
+  <p class="affiliations">
+    <sup>1</sup>Huawei Central Media Technology Institute &nbsp;&nbsp;
+    <sup>2</sup>Huawei Technologies Co., Ltd.
+  </p>
+
+  <p class="corresponding">
+    <sup>†</sup>Corresponding author
+  </p>
+</div>
 </section>
 
+<!-- Abstract -->
+<section id="abstract" class="card">
+  <h2>Abstract</h2>
+  <p>Motion tokenization is fundamental to the development of generalizable motion models, yet existing approaches remain restricted to species-specific skeletons, such as humans, thereby limiting their applicability across diverse morphologies. We present <strong>NECromancer (NEC)</strong>, a universal motion tokenizer designed to operate on arbitrary BVH skeletons. NEC is built upon three core components: (1) an <strong>Ontology-aWare Skeletal Graph EncOder (OwO)</strong>, which leverages graph neural networks to encode structural priors extracted from BVH files—including joint-name semantics, rest-pose offsets, and skeletal topology—into robust skeletal embeddings; (2) a <strong>Topology Agnostic Tokenizer (TAT)</strong>, which compresses motion sequences into a universal, topology–invariant latent representation, thereby decoupling motion dynamics from morphology; and (3) the <strong>Unified BVH Universe (UvU)</strong>, a large-scale dataset that consolidates BVH motions across heterogeneous skeletons (humans, quadrupeds, and other species), enabling systematic training and evaluation under diverse morphologies. Experimental results demonstrate that NEC achieves high-fidelity motion reconstruction with substantial compression, while effectively disentangling motion from skeletal structure. This capability supports a broad range of downstream tasks, including cross-species motion transfer, motion composition, denoising, generation (plug-and-play with any token-based generator; e.g., MoMask) and motion–text retrieval (via an OwO-based CLIP variant). By grounding motion representation in BVH animation while removing species-specific constraints, NEC establishes a principled framework for universal motion analysis and synthesis across varied morphologies.</p>
+</section>
 
+<!-- Method -->
+<section id="method" class="card">
+  <h2>Method</h2>
+  <img src="assets/tokernizer.png" class="method-img">
+  <p>Overview of NECromancer (NEC). NEC consists of two main components: (a) Ontology-aware Skeletal Graph Encoder (OwO), which encodes static skeletal information (topology, joint names, rest pose) into structured graph-based joint features;(b) Topology-Agnostic Tokenizer (TAT), including Spatio-Temporal Encoder and Decoder, which maps motion sequences into a unified feature space, appends virtual joints, and converts them into discrete motion tokens.</p>
+</section>
 
 <!-- Tasks Section -->
 <section id="results" class="card">
