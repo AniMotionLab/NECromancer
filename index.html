@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Page</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Title & Authors -->
+<section id="title-authors" class="card">
+  <h1>NECROMANCER: 
+  </h1>
+  <h1>BREATHING LIFE INTO SKELETONS VIA BVH ANIMATION
+  </h1>
+  <p class="authors">Supplemental Video Materials</p>
+</section>
+
+
+
+<!-- Tasks Section -->
+<section id="results" class="card">
+  <h2>Results</h2>
+  <p class="muted">Click tabs to switch tasks. Use the arrows to navigate video examples within each task</p>
+  <div id="taskTabs" class="tabs"></div>
+  <div id="taskPanels" class="tab-content"></div>
+</section>
+
+<!-- Video Modal -->
+<div id="videoModal" class="modal" aria-hidden="true">
+  <div class="modal-content">
+    <button id="modalClose" class="modal-close">✖</button>
+    <video id="modalVideo" controls autoplay></video>
+    <div id="modalCaption" class="caption"></div>
+  </div>
+</div>
+
+<!-- Comparison Section -->
+<section id="comparison" class="card">
+  <h2>Reconstruction comparison with Other Methods</h2>
+  <p class="muted">Click tabs to switch tasks. Use the arrows to navigate video examples within each task</p>
+  <div class="tabs" id="comparison-tabs"></div>
+  <div id="comparisonPanels" class="tab-content"></div>
+</section>
+
+<script src="js/main.js"></script>
+</body>
+</html>
